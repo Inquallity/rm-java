@@ -1,8 +1,8 @@
-package sample;
+package redmine;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import sample.view.LoginView;
+import redmine.view.LoginView;
 
 public class AppDelegate extends Application {
 

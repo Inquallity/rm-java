@@ -1,4 +1,4 @@
-package sample.view;
+package redmine.view;
 
 import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;

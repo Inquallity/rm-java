@@ -1,4 +1,4 @@
-package sample.controllers;
+package redmine.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
