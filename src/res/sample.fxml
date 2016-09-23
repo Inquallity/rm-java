@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.geometry.Insets?><?import javafx.scene.control.Button?><?import javafx.scene.control.PasswordField?><?import javafx.scene.control.TextField?><?import javafx.scene.layout.BorderPane?><?import javafx.scene.layout.VBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102-ea"
+    fx:controller="sample.controllers.Controller">
+    <center>
+        <VBox BorderPane.alignment="CENTER" spacing="5">
+            <padding>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </padding>
+            <TextField alignment="CENTER" promptText="Login" fx:id="tfLogin" />
+            <PasswordField alignment="CENTER" promptText="Password" fx:id="pfPassword" />
+        </VBox>
+    </center>
+    <bottom>
+        <Button BorderPane.alignment="CENTER" onAction="#onConfirmClick" text="Login"
+            fx:id="btnConfirm">
+            <padding>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </padding>
+        </Button>
+    </bottom>
+</BorderPane>
