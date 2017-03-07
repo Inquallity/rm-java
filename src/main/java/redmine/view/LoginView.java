@@ -4,6 +4,7 @@ import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;
 
 import java.io.IOException;
+import java.net.URL;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -30,7 +31,11 @@ public class LoginView {
     @Nullable
     private Parent loadParent() {
         try {
-            return FXMLLoader.load(getClass().getResource("../../res/sample.fxml"));
+            final ClassLoader cl = getClass().getClassLoader();
+            final URL resource = cl.getResource("sample.fxml");
+            if (resource != null) {
+                return FXMLLoader.load(resource);
+            }
         } catch (IOException e) {
             System.out.printf("%s: %s", e, e.getMessage());
         }
